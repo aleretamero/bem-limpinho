@@ -1,0 +1,71 @@
+.benefits {
+  @include display-flex();
+  background: linear-gradient(to right, #0ac4f9, #0c9fda);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  width: 100%;
+  padding: 80px 0;
+
+  .container-benefits {
+    @include display-flex();
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.card-benefits {
+  @include display-flex(flex-start);
+  background-image: linear-gradient(#4043a4, #3c418a);
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 250px;
+  width: 100%;
+  padding: 2rem 1rem;
+  height: 370px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: 0.2s;
+
+  img {
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+  }
+
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+    // background-color: beige;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+  }
+
+  div {
+    @include display-flex();
+    flex-direction: column;
+    gap: 0.5rem;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .benefits {
+    .container-benefits {
+      padding: 0 1rem;
+    }
+  }
+}
