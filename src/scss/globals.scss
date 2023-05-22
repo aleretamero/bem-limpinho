@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #f4f4f4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  @include display-flex(space-between);
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.whatsapp {
+  @include display-flex();
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1px;
+  z-index: 999;
+  background:  #25d366;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.display-none {
+  display: none !important;
+}
+
+.no-wrap {
+  white-space: nowrap !important;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.btn {
+  @include display-flex();
+  width: 200px;
+  height: 50px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #f4f4f4;
+  background-color: #3c418a;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: #f4f4f4;
+    color: #3c418a;
+  }
+}
