@@ -12,6 +12,7 @@ const cardsBenefits: NodeListOf<HTMLElement> | null =
   document.querySelectorAll('.card-benefits');
 cardsBenefits.forEach(card => {
   VanillaTilt.init(card, {
+    scale: 1.05,
     reverse: false,
     max: 10,
     speed: 200,
