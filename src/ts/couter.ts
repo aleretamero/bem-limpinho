@@ -7,7 +7,7 @@ function counterAbout() {
   });
 }
 
-export function counter(element: HTMLElement) {
+export function counterElement(element: HTMLElement) {
   if (element) {
     const number = Number(element.innerText);
     element.innerText = '';
