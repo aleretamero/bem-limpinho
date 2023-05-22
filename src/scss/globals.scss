@@ -50,7 +50,7 @@ body {
 }
 
 .hidden {
-  visibility: hidden !important;
+  visibility: hidden;
 }
 
 .btn {
@@ -71,3 +71,8 @@ body {
     color: #3c418a;
   }
 }
+
+// :focus-visible {
+//   background-color: darkred;
+//   outline: 0;
+// }
