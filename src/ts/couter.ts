@@ -3,7 +3,7 @@ function counterAbout() {
     document.querySelectorAll('.number-about span');
 
   elementsNumbersAbout.forEach(element => {
-    counter(element);
+    counterElement(element);
   });
 }
 
