@@ -11,11 +11,12 @@ export function counterElement(element: HTMLElement) {
   if (element) {
     const number = Number(element.innerText);
     element.innerText = '';
+    const time = 2500 / number;
 
     for (let counter = 0; counter <= number; counter++) {
       setTimeout(() => {
         element.innerText = String(counter);
-      }, counter * 10);
+      }, counter * time);
     }
   }
 }

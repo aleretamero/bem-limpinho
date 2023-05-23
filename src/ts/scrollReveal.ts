@@ -2,7 +2,13 @@ import ScrollReveal from 'scrollreveal';
 
 const sr = ScrollReveal({ reset: false });
 
-const classes = ['.headline', '.headline-service', '.headline-form'];
+const classes = [
+  '.headline-bottom',
+  '.headline-service',
+  '.headline-form',
+  '.headline-left',
+  '.headline-right',
+];
 
 classes.forEach(classe => {
   document.querySelectorAll(classe).forEach(el => {
@@ -10,11 +16,27 @@ classes.forEach(classe => {
   });
 });
 
-const headline = {
-  delay: 150,
+const headlineToBottom = {
+  delay: 50,
   duration: 2000,
   distance: '200%',
   origin: 'bottom',
+  opacity: 0,
+};
+
+const headlineToleft = {
+  delay: 50,
+  duration: 2000,
+  distance: '200%',
+  origin: 'left',
+  opacity: 0,
+};
+
+const headlineToRight = {
+  delay: 50,
+  duration: 2000,
+  distance: '200%',
+  origin: 'right',
   opacity: 0,
 };
 
@@ -35,7 +57,9 @@ const headlineForm = {
 };
 
 export function scrollReveal() {
-  sr.reveal('.headline', headline);
+  sr.reveal('.headline-bottom', headlineToBottom);
+  sr.reveal('.headline-left', headlineToleft);
+  sr.reveal('.headline-right', headlineToRight);
   sr.reveal('.headline-service', headlineService);
-  sr.reveal('.headline-form', headlineForm)
+  sr.reveal('.headline-form', headlineForm);
 }
