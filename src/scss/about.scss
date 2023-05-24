@@ -9,6 +9,7 @@
   // min-height: calc(100vh - 80px);
   min-height: 100vh;
   padding: 80px 0;
+  border-bottom: 5px solid #3c418a;
 
   .container-about {
     // @include display-flex();
@@ -55,13 +56,13 @@
   .number-about {
     font-size: 2.8rem;
     font-weight: 600;
-    color: #3c418a;
+    color: $color-palette-5;
   }
 
   .description-number-about {
     font-size: 1rem;
     font-weight: 600;
-    color: #3c418a;
+    color:  $color-palette-5;
   }
 }
 
@@ -73,12 +74,12 @@
   }
 
   .content-numbers-about {
-    .number-about {
-      color: #F4F4F4;
-    }
+    // .number-about {
+    //   color: #f4f4f4;
+    // }
 
     .description-number-about {
-      color: #F4F4F4;
+      color: #f4f4f4;
     }
   }
 }
