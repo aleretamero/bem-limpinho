@@ -19,5 +19,14 @@
     .author {
       margin-top: 5rem;
     }
+
+    & p:last-child {
+      @include display-flex();
+      gap: 0.5rem;
+
+      .c8b-logo {
+        width: 100px;
+      }
+    }
   }
 }
