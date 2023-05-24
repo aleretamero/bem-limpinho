@@ -42,8 +42,8 @@ const headlineToRight = {
 
 const headlineService = {
   delay: 150,
-  duration: 3000,
-  distance: '300%',
+  duration: 1500,
+  distance: '200%',
   origin: 'left',
   opacity: 0,
 };
