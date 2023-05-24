@@ -29,17 +29,22 @@ body {
   bottom: 20px;
   right: 20px;
   width: 60px;
-  height: 60px;
+  aspect-ratio: 1;
+  // height: 60px;
   border-radius: 50%;
   cursor: pointer;
-  padding: 1px;
+  // padding: 5px;
   z-index: 999;
   background: #25d366;
   transition: 0.2s;
 
+  svg {
+    width: 60%;
+  }
+
   &:hover {
     transform: scale(1.2);
-    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   }
 }
 
