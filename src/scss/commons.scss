@@ -4,10 +4,15 @@
   align-items: $align;
 }
 
-@mixin line ($color:#fff, $witdh:30px, $height:5px, $border-radius:3px) {
+@mixin line($color: #fff, $witdh: 30px, $height: 5px, $border-radius: 3px) {
   background-color: $color;
-  width: 30px;
-  height: 5px;
+  width: $witdh;
+  height: $height;
   border-radius: $border-radius;
 }
 
+$color-palette-1: #4043a4;
+$color-palette-2: #3c418a;
+$color-palette-3: #0c9fda;
+$color-palette-4: #0ac4f9;
+$color-palette-5: #f4f4f4;
