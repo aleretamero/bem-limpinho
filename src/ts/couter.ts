@@ -11,7 +11,7 @@ export function counterElement(element: HTMLElement) {
   if (element) {
     const number = Number(element.innerText);
     element.innerText = '';
-    const time = 2500 / number;
+    const time = 3000 / number;
 
     for (let counter = 0; counter <= number; counter++) {
       setTimeout(() => {
