@@ -6,10 +6,10 @@ const next = document.querySelector('.next');
 
 let index: number = 0;
 const imgs = [
-  '../../assets/imgs-carousel/cadeiras.jpg',
-  '../../assets/imgs-carousel/quarto.jpg',
-  '../../assets/imgs-carousel/sofa.jpg',
-  '../../assets/imgs-carousel/tapete.jpg',
+  '../assets/imgs-carousel/cadeiras.jpg',
+  '../assets/imgs-carousel/quarto.jpg',
+  '../assets/imgs-carousel/sofa.jpg',
+  '../assets/imgs-carousel/tapete.jpg',
 ];
 
 function loadGallery(index = 0) {
