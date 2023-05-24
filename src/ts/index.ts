@@ -3,12 +3,14 @@ import VanillaTilt from 'vanilla-tilt';
 import { menu } from './menu';
 import { scrollReveal } from './scrollReveal';
 import { observeSection } from './couter';
-import {carousel} from './carousel'
+import { carousel } from './carousel';
+import { form } from './form';
 
 menu();
 scrollReveal();
 observeSection();
-carousel()
+carousel();
+form();
 
 const cardsBenefits: NodeListOf<HTMLElement> | null =
   document.querySelectorAll('.card-benefits');
