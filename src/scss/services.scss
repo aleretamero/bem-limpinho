@@ -1,10 +1,16 @@
 .services {
   @include display-flex();
-  background: linear-gradient(to right, #0ac4f9, #0c9fda);
+  // background: linear-gradient(to right, #0ac4f9, #0c9fda);
+  background-color: #f4f4f4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%230C9FDA' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23F4F4F4' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23ebf1f4' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23e3eef5' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23daecf5' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23d1e9f5' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23c8e6f6' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23bfe3f6' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23b5e0f6' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23abddf7' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a1dbf7' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2396d8f7' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%238ad5f8' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%237ed2f8' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2371cff8' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2362ccf8' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2350caf9' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%2339c7f9' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%230AC4F9' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  border-bottom: 5px solid #000;
+
   flex-direction: column;
   width: 100%;
   padding: 80px 0;
-  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
 
   .container-services {
     @include display-flex(flex-start);
@@ -36,17 +42,19 @@
   padding: 1rem;
   gap: 1rem;
   text-align: center;
-  border: 2px solid #3c418a;
+  border: 4px solid #3c418a;
   border-radius: 10px;
-  background: linear-gradient(to right, #0c9fda, #0ac4f9);
-  color: #3c418a;
+  // background: linear-gradient(to right, #0c9fda, #0ac4f9);
+  background-image: url(../../assets/imgs/background-service.svg);
+  background-size: cover;
+  color: $color-palette-5;
   transition: 0.3s;
 
   &:hover {
     // transform: scale(1.2);
     scale: 1.03;
     translate: -5px -5px 0;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   }
 
   img {
@@ -55,7 +63,7 @@
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 2px solid #3c418a;
+    border: 4px solid #3c418a;
     object-fit: cover;
     transition: 0.3s;
   }
