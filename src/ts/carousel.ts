@@ -5,12 +5,15 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
 let index: number = 0;
-const imgs = [
-  './assets/imgs-carousel/cadeiras.jpg',
-  './assets/imgs-carousel/quarto.jpg',
-  './assets/imgs-carousel/sofa.jpg',
-  './assets/imgs-carousel/tapete.jpg',
-];
+const imgsForCarousel: NodeListOf<HTMLImageElement> = document.querySelectorAll(
+  '.container-imgs img'
+);
+const imgs: string[] = [];
+imgsForCarousel.forEach(img => {
+  if(img.attributes[0].nodeValue) {
+    imgs.push(img.attributes[0].nodeValue)
+  }
+});
 
 function loadGallery(index = 0) {
   imgEmphasis?.setAttribute('src', imgs[index]);
