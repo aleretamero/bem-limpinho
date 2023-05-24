@@ -4,15 +4,15 @@ const imgEmphasis = document.querySelector('.photo.emphasis');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
+let index: number = 0;
 const imgs = [
-  './assets/imgs-carousel/cadeiras.jpg',
-  './assets/imgs-carousel/quarto.jpg',
-  './assets/imgs-carousel/sofa.jpg',
-  './assets/imgs-carousel/tapete.jpg',
+  '../../assets/imgs-carousel/cadeiras.jpg',
+  '../../assets/imgs-carousel/quarto.jpg',
+  '../../assets/imgs-carousel/sofa.jpg',
+  '../../assets/imgs-carousel/tapete.jpg',
 ];
 
 function loadGallery(index = 0) {
-  
   imgEmphasis?.setAttribute('src', imgs[index]);
 
   if (index === 0) {
@@ -27,8 +27,6 @@ function loadGallery(index = 0) {
     imgNext?.setAttribute('src', imgs[index + 1]);
   }
 }
-
-let index: number = 0;
 
 const upIndex = () => {
   if (index === imgs.length - 1) {
