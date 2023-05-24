@@ -27,6 +27,6 @@ export function form() {
     )}`;
 
     window.open(linkWhatsApp, '_blank');
-    form?.clear()
+    form?.reset()
   }
 }
