@@ -253,32 +253,32 @@
         <!-- Contact -->
         <section class="contact" id="contact">
           <div class="container-contact">
-            <h2 class="headline-bottom">Fale</h2>
+            <h2 class="headline-bottom">Fale Conosco</h2>
 
             <form class="form headline-form">
               <div>
                 <label>
                   <span>Nome</span>
-                  <input type="text" autocomplete="name" />
+                  <input id="name" type="text" autocomplete="name" />
                 </label>
                 <label>
                   <span>Telefone</span>
-                  <input type="text" autocomplete="tel" />
+                  <input id="phone" type="text" autocomplete="tel" />
                 </label>
               </div>
               <div>
                 <label>
                   <span>E-mail</span>
-                  <input type="text" autocomplete="email" />
+                  <input id="email" type="text" autocomplete="email" />
                 </label>
                 <label>
                   <span>Assunto</span>
-                  <input type="text" autocomplete="off" />
+                  <input id="subject" type="text" autocomplete="off" />
                 </label>
               </div>
               <label>
                 <span>Sua mensagem</span>
-                <textarea cols="30" rows="10"></textarea>
+                <textarea id="message" cols="30" rows="10"></textarea>
               </label>
               <div>
                 <input class="btn" type="submit" value="Enviar" />
@@ -309,8 +309,8 @@
             >
           </p>
         </div>
+        <a href="https://api.whatsapp.com/send?phone=5511983552179&text=SUA_MENSAGEM">Enviar mensagem via WhatsApp</a>
       </footer>
-
       <!-- WhatsAppButton -->
       <a href="#" class="whatsapp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
